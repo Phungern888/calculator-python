@@ -1,1 +1,23 @@
-https://onecompiler.com/python/44xtvarub
+# This code was made by Phungern Number 8
+# We can test its on Python online Compiler >> Link : https://onecompiler.com/python/44xtvarub <<
+
+def calculateNumber(Number1, Number2, Operator):
+    if Operator == '+' or Operator == "add" or Operator == "addition":
+        return Number1 + Number2
+    elif Operator == '-' or Operator == "sub" or Operator == "subtraction":
+        return Number1 - Number2
+    elif Operator == '*' or Operator == "mul" or Operator == "multiply":
+        return Number1 * Number2
+    elif Operator == '/' or Operator == "div" or Operator == "divide":
+        return Number1 / Number2
+    else:
+        return ("What do you want to calculate?")
+    
+
+n1 = int(input("First Number : "))
+op = input("Operator (+, -, *, /) : ")
+n2 = int(input("Second Number : "))
+
+answer = calculateNumber(n1, n2, op)
+print(answer)
+
